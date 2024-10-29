@@ -26,5 +26,11 @@ public class task3_StudentGroupService {
         Collections.sort(studentList); 
         return studentList;
     }
+// метод сортировки по ФИО
+    public List<task3_Student> getSortedStydentByFIO(){
+        List<task3_Student> studentList = new ArrayList<>(studentGroup.getStudentList());
+        studentList.sort(new task3_StudentComparator()); // у списка вызываем метод sort передав в него Компоратор
+        return studentList;
+    }
 
 }
