@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List; 
-public class task3_StudentGroup {
+public class task3_StudentGroup implements Iterable<task3_Student>{
 
     private List<task3_Student> studentList;
 
@@ -27,5 +28,11 @@ public class task3_StudentGroup {
     public List<task3_Student> getStudentList() {
         return this.studentList;
     }
+
+    @Override
+    public Iterator<task3_Student> iterator() {
+        return new task3_StudentGroupIterator(this); // метод итератора возвращает итератор
+    }
+
     
 }
