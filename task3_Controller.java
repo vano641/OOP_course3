@@ -11,4 +11,8 @@ public class task3_Controller {
      public List<task3_Student> getSortedStudentList(){
         return studentGroupService.getSortedStudentList();
      }
+
+    public List<task3_Student> getSortedStudentByFIO(){
+        return studentGroupService.getSortedStydentByFIO();
+    }
 }
