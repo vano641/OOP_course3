@@ -1,6 +1,10 @@
 public class task3_Student extends User implements Comparable<task3_Student>{
     
     private Integer studentId;
+
+    public task3_Student(String firstName, String lastName, String middleName) {
+        super(firstName, lastName, middleName);
+    }
    
     public Integer getStudentId() {
         return this.studentId;
