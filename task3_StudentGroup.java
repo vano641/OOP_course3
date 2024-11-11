@@ -34,5 +34,10 @@ public class task3_StudentGroup implements Iterable<task3_Student>{
         return new task3_StudentGroupIterator(this); // метод итератора возвращает итератор
     }
 
+// метод который помещает нового студента в список
+    public void createStudent(String firstName, String lastName, String middleName) {
+        studentList.add(new task3_Student(firstName, lastName, middleName));
+    }
+
     
 }
