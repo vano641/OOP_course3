@@ -5,6 +5,14 @@ public class User {
     protected String middleName;
 
 
+    public User(String firstName, String lastName, String middleName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.middleName = middleName;
+    }
+
+
+
     public String getFirstName() {
         return this.firstName;
     }
